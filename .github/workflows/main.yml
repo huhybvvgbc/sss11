@@ -1,10 +1,6 @@
 name: Run tmux sessions
 
-on:
-  push:
-    branches:
-      - main
-
+on: [push, workflow_dispatch]
 jobs:
   run-sessions:
     runs-on: ubuntu-latest
